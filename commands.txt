@@ -1,0 +1,31 @@
+abhishek@bhatta:~$ mkdir ~/learning-git               //directory same as repo name
+
+abhishek@bhatta:~$ cd learning-git/		      //go inside that directory	
+
+abhishek@bhatta:~/learning-git$ gedit README		//create a readme
+Gtk-Message: Failed to load module "atk-bridge"
+
+abhishek@bhatta:~/learning-git$ git init		//initialise a git repo
+Initialized empty Git repository in /home/abhishek/learning-git/.git/
+
+abhishek@bhatta:~/learning-git$ git add README          //add readme for commit list
+abhishek@bhatta:~/learning-git$ git commit -m 'first commit'       //commit the files in the list with a comment:"first commit"
+[master (root-commit) d0c846d] first commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README
+
+abhishek@bhatta:~/learning-git$ git remote add origin https://github.com/abhi11/learning-git.git    //add link to repo for uploading(syncing)
+
+abhishek@bhatta:~/learning-git$ git push origin master                         //push to the server (on GitHub)                   
+ 
+Username for 'https://github.com': abhishek.bhattacharjee11@gmail.com        //use email and 
+Password for 'https://abhishek.bhattacharjee11@gmail.com@github.com':        //password for authentication
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/abhi11/learning-git.git
+ * [new branch]      master -> master                 //succesfull
+
+abhishek@bhatta:~/learning-git$
